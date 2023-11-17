@@ -18,6 +18,12 @@ $(function(){
 });
 
 
+$(function(){
+    $("#footer").load("footer2.html");
+});
+
+
+
 
 const hamburger = document.querySelector(".hamburger");
         hamburger.addEventListener("click", function() {
