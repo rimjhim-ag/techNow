@@ -83,12 +83,6 @@ header nav ul li a:focus{
 }
 
 
-
-
-
-
-
-
 @media only screen and (max-width: 800px) {
     .hamburger {
         display: block;
@@ -150,19 +144,10 @@ header nav ul li a:focus{
 /*    nav - bar ended  */
 
 
-
-
-
-
-
-
 .search{
     display: block;
     text-align: center;
     justify-content: center;
-}
-.fInput{
-
 }
 .topics{
     display: flex;
@@ -187,9 +172,6 @@ header nav ul li a:focus{
     background-color: black;
     color:white;
 }
-
-
-/* ABOUT PAGE */
 .about{
     padding: 150px;
     font-size: larger;
@@ -199,18 +181,6 @@ header nav ul li a:focus{
     width:250px;
     border-radius:10px;
 }
-.aboutInput{
-
-}
-
-
-/* blog */
-
-
-
-
-
-
 main{
     max-width: 1400px;
     margin: 0 auto;
@@ -318,13 +288,21 @@ main{
     width: 100%;
     height: 100%;
 }
-.about{  
-    padding: 2.2rem;
+/* about page */
+.about1{  
+    padding: 100px;
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
+    font:15px Lora, sans-serif;
+
+
 }
-.about p{
+.about1 h1{
+    text-decoration: underline;
+    text-decoration-color:black;
+}
+.about1 p{
     color: rgb(78, 78, 78);
     line-height: 1.5;   
 }
@@ -344,10 +322,6 @@ main{
     box-shadow: 0px 5px 4px rgba(190, 190, 190, 0.3);
     transition: 0.2s ease-in-out;
 }
-
-
-
-
 
 .content4{  
     padding: 3rem;
@@ -404,11 +378,6 @@ main{
     color: whitesmoke;
     padding-left: 8px;
 }
-
-
-
-
-/* blog ended */
 
 
 /* footer */
@@ -497,6 +466,8 @@ main{
   
   .footer-col form button:hover {
     background: #cecccc;
+    text-decoration: underline;
+    text-decoration-color: aliceblue;
   }
   
   .footer-col .icons {
@@ -512,6 +483,8 @@ main{
   
   .footer-col .icons i:hover  {
     color: #fff;
+    text-decoration: underline;
+    text-decoration-color: aliceblue;
   }
   
   @media (max-width: 768px){
@@ -541,3 +514,70 @@ main{
       margin: 10px 0 0 0;
     } 
   }
+
+  /* join page */
+  .subscribe{
+    background-color:#fee65b;
+    height: 300px;
+  }
+  .subscribe .container1{
+    padding: 50px 50px 50px 50px;
+    text-align: center;
+
+  }
+  .subscribe .container1 .form button{
+    background: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+
+  }
+  .subscribe .container1 form{
+    display: flex;
+    gap: 5px;
+  }
+
+  .subscribe .container1 ::placeholder {
+    color: #ccc;
+
+  }
+  .part{
+    display: flex;
+    /* border: 5px solid black; */
+    height: 600px;
+  }
+  .part1{
+    padding: 190px;
+    padding-left:100px;
+    text-align: center;
+    /* border: 2px solid black; */
+
+  }
+  .part2{
+    /* border: 2px solid black; */
+    width:800px;
+
+  }
+  .part2 img{
+    height:500px;
+    width:500px;
+  }
+  .company{
+    /* border: solid black 2px; */
+    height: 400px;
+
+  }
+  .company .container1{
+    padding: 50px 50px 50px 50px;
+    /* border: solid black 2px; */
+    text-align: center;
+
+  }
+  /* .company .container1 .images{
+    border: solid black 2px; 
+    height:500px;
+  } */
