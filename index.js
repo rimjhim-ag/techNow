@@ -25,6 +25,9 @@ $(function(){
 
 
 
+
+
+
 const hamburger = document.querySelector(".hamburger");
         hamburger.addEventListener("click", function() {
             const navBar = document.querySelector("nav");
