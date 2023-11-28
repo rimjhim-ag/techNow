@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/topic.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Search</h1>
+    
+    <p>Search hundreds of freshly picked marketing articles and resources.</p>
+    <br>
+      <div class="search-barflex">
+        <input id="search-text" type="text" class="news-input" placeholder="e.g. Technology">
+        <button id="search-button" class="search-button">Search</button>
+    </div>
+      </form>
+    </div>
+    <br>
+    <br>
+        <div class="main-nav container flex">
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+                    <li class="hover-link nav-item" id="SAMSUNG" onclick="onNavItemClick('SAMSUNG')">SAMSUNG</li>
+                    <li class="hover-link nav-item" id="AI" onclick="onNavItemClick('AI')">AI</li>
+                    <li class="hover-link nav-item" id="APPLE" onclick="onNavItemClick('APPLE')">APPLE</li>
+                    <li class="hover-link nav-item" id="GADGETS" onclick="onNavItemClick('GADGETS')">GADGETS</li>
+                    <li class="hover-link nav-item" id="GOOGLE" onclick="onNavItemClick('GOOGLE')">GOOGLE</li>
+                    <li class="hover-link nav-item" id="Amazon" onclick="onNavItemClick('Amazon')">Amazon</li>
+                    <li class="hover-link nav-item" id="Flipkart" onclick="onNavItemClick('Flipkart')">Flipkart</li>
+                    <li class="hover-link nav-item" id="Whatsapp" onclick="onNavItemClick('WhatsApp')">Whatsapp</li>
+                    <li class="hover-link nav-item" id="BlockChain" onclick="onNavItemClick('BlockChain')">BlockChain</li>
+                    <li class="hover-link nav-item" id="CyberSecurity" onclick="onNavItemClick('CyberSecurity')">CyberSecurity</li>
+                    <li class="hover-link nav-item" id="hacking" onclick="onNavItemClick('hacking')">hacking</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="cards-container container flex" id="cards-container"></div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+
+
+
+   
+
+    <script src="topic.js"></script>
+    
+</body>
+</html>
