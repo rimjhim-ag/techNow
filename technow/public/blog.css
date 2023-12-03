@@ -1,0 +1,176 @@
+/* Apply a smooth transition to all elements */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Reset default margin and padding for all elements */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a box-sizing border-box model to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+/* Header styles */
+#nav-bar {
+    height: 60px;
+    background-color: #3498db; /* Blue color */
+}
+
+/* Main styles */
+main {
+    margin: 20px auto;
+}
+
+/* Styling for container2 */
+.container2 {
+    display: flex;
+    margin: 20px;
+    box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+    align-items: center;
+    border: 2px solid #e2e2e2;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.container2:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 4px rgba(190, 190, 190, 0.3);
+}
+
+.content2 {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.content2 h1 {
+    margin-bottom: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container2 input {
+    margin-top: 10px;
+    box-shadow: 3px 3px 10px black;
+    padding: 15px 32px;
+    font-size: 16px;
+}
+
+.container2 button {
+    background-color: #2ecc71; /* Green color */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.image2 img {
+    width: 100%;
+}
+
+/* Styling for container3 and box */
+.container3 {
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+    align-items: center;
+    border: 2px solid #e2e2e2;
+    border-radius: 0.7rem;
+    overflow: hidden;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 4px rgba(190, 190, 190, 0.3);
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling for container4 and content4 */
+.container4 {
+    display: flex;
+    box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+    align-items: center;
+    border: 2px solid #e2e2e2;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: #ecf0f1; /* Light gray background color */
+}
+
+.container4:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 5px 4px rgba(190, 190, 190, 0.3);
+}
+
+.content4 {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.content4 h1 {
+    font-size: 40px; /* Smaller font size */
+    padding-left: 20px;
+    width: 100%;
+    color: #2ecc71; /* Green color */
+}
+
+.content4 p {
+    color: rgb(78, 78, 78);
+    line-height: 2;
+    padding-left: 20px;
+}
+
+.image3 img {
+    width: 100%;
+}
+
+/* Footer styles */
+#footer {
+    height: 60px;
+    background-color: #3498db; /* Blue color */
+    margin-top: 20px;
+}
+
+/* Animation for heading in container4 */
+.content4 h1 {
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

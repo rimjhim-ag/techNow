@@ -56,10 +56,16 @@ $(function(){
 
 
 const hamburger = document.querySelector(".hamburger");
-        hamburger.addEventListener("click", function() {
-            const navBar = document.querySelector("nav");
+
+if (hamburger) { // Check if the element is found
+    hamburger.addEventListener("click", function() {
+        const navBar = document.querySelector("nav");
+        if (navBar) { // Check if the element is found
             navBar.classList.toggle("on");
-        });
+        }
+    });
+}
+
 
 
 // feed

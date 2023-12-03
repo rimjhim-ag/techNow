@@ -9,7 +9,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", function (req, res) {
-  res.sendFile(__dirname + "/public/join.html");
+  res.sendFile(__dirname + "/public/feed.html");
 });
 
 // Static folder
@@ -39,14 +39,15 @@ app.post('/', (req, res) => {
   const options = {  
     method: 'POST',
     headers: {
-      Authorization: 'auth ee40bb8f4bb56181bace15899bf97cad-us13'
+      Authorization: 'auth 377b931d055b1e7b99f37074563c2084-us13'
     }
     
   };
 
   const request = https.request(url, options, function (response) {
     if (response.statusCode === 200) {
-      res.sendFile(__dirname + "/public/join.html");
+      res.sendFile(__dirname + "/public/subscribe.html");
+      console.log("success");
       
     } else {
       res.sendFile(__dirname + "/public/join.html");
